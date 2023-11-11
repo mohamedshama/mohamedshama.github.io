@@ -1,56 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>
-		Mohamed Shama
-	</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
 </head>
-
 <body>
-<center>
 
- <h1 style="color:#005e00;">Welcome to this simple photo gallery</h1>
+<!-- Professional-looking header -->
+<header style="text-align: center; padding: 20px; background-color: #333; color: #fff; font-family: 'Arial', sans-serif;">
+    <h1>Registration Form</h1>
+</header>
 
- <h3>Thanks for visiting my website!</h3>
-	
-<!-- Gallery -->
-<iframe name="frame" src="https://i.ibb.co/djg8CYb/pexels-cong-h-1404819.jpg" width="500" height="500" frameborder="0" style="border: 2px solid #333; margin: 10px;"></iframe><br>
+<!-- Registration Form -->
+<form style="max-width: 400px; margin: 0 auto;">
 
-<a href="https://i.ibb.co/djg8CYb/pexels-cong-h-1404819.jpg" target="frame">
- <img src="https://i.ibb.co/djg8CYb/pexels-cong-h-1404819.jpg" alt="Cat 1" width="100" height="75" style="margin: 10px; border: 1px solid #333;">
-  </a>
+    <!-- Name Field -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" style="width: 100%; padding: 8px; margin-bottom: 10px;">
 
-<a href="https://images.pexels.com/photos/2113332/pexels-photo-2113332.jpeg" target="frame">
- <img src="https://images.pexels.com/photos/2113332/pexels-photo-2113332.jpeg" alt="Cat 2" width="100" height="75" style="margin: 10px; border: 1px solid #333;">
-  </a>
+    <!-- Phone Field -->
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" style="width: 100%; padding: 8px; margin-bottom: 10px;">
 
-<a href="https://images.pexels.com/photos/384555/pexels-photo-384555.jpeg" target="frame">
- <img src="https://images.pexels.com/photos/384555/pexels-photo-384555.jpeg" alt="Cat 3" width="100" height="75" style="margin: 10px; border: 1px solid #333;">
-  </a> <br>
+    <!-- Email Field -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" style="width: 100%; padding: 8px; margin-bottom: 10px;">
 
-<!-- Button -->
-        <a href="https://www.pexels.com/search/cat/?size=medium" target="_blank" > 
-          <button 
-          style="
-        background-color: #005e00; 
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        margin: 4px 2px;
-        cursor: pointer;
-        text-align: center;
-        font-family: Cursive;
-        font-size: 20px;
-        " 
-          
-          >For more cat photos click here</button> 
-          
-        </a>
-</center>          
+    <!-- Gender Field -->
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" style="width: 100%; padding: 8px; margin-bottom: 10px;">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+
+    <!-- Address Field -->
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" style="width: 100%; padding: 8px; margin-bottom: 10px;"></textarea>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Register" style="background-color: #333; color: #fff; padding: 10px; border: none; cursor: pointer;">
+
+</form>
+
 </body>
-
 </html>
